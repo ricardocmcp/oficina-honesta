@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title>Prot. Oficina Honesta</title>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+	<!-- Latest compiled and minified CSS -->
+	<link href="lib/vendors/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+	<link href="css/styles.css" rel="stylesheet">
+
+    <script src="js/global.js" type="text/javascript"></script>
+    <script src="js/scripts.js" type="text/javascript"></script>
+
+</head>
+
+<body>
+	<nav class="navbar navbar-default navbar-fixed-top"> 
+		<div class="container-fluid"> 
+			<div class="navbar-header"> 
+				<button type="button" class="collapsed navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-8" aria-expanded="false"> 
+					<span class="sr-only">Toggle navigation</span> 
+					<span class="icon-bar"></span> 
+					<span class="icon-bar"></span> 
+					<span class="icon-bar"></span> 
+				</button> 
+				<a href="#" onclick="goBack()" class="navbar-brand">
+					<span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+					Oficina honesta
+				</a> 
+			</div> 
+			<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-8"> 
+				<ul class="nav navbar-nav"> 
+					<li><a href="index.html">sair</a></li> 
+				</ul> 
+			</div> 
+		</div> 
+	</nav>
+
+	<div class="lista">
+
+		<div id="googleMap" class="map-oficinas"></div>
+		<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyA3AV4YArBcfLIB-flhRV-cbNsMkQiC7Jg&callback=myMap"></script>
+
+		<div>
+			<div>
+				<div>
+					<ul>
+						<li>
+							<a href="oficina.htm">
+								<h4 class="title-oficina">HC Pneus</h4>
+								<span class="tipo-servico">Mecânica geral</span>
+								<span class="distancia">1.6km</span>
+								<span class="qtd-avaliacoes">3.467 Avaliações</span>
+								<span class="nota-foicina">
+									<span class="glyphicon glyphicon-star" aria-hidden="true"></span>
+									<span class="glyphicon glyphicon-star" aria-hidden="true"></span>
+									<span class="glyphicon glyphicon-star-empty" aria-hidden="true"></span>
+									<span class="glyphicon glyphicon-star-empty" aria-hidden="true"></span>
+									<span class="glyphicon glyphicon-star-empty" aria-hidden="true"></span>
+								</span>
+							</a>
+						</li>
+						<li>
+							<a href="oficina.htm">
+								<h4 class="title-oficina">6 Bocas</h4>
+								<span class="tipo-servico">Mecânica geral</span>
+								<span class="distancia">826m</span>
+								<span class="qtd-avaliacoes">2.467 Avaliações</span>
+								<span class="nota-foicina">
+									<span class="glyphicon glyphicon-star" aria-hidden="true"></span>
+									<span class="glyphicon glyphicon-star-empty" aria-hidden="true"></span>
+									<span class="glyphicon glyphicon-star-empty" aria-hidden="true"></span>
+									<span class="glyphicon glyphicon-star-empty" aria-hidden="true"></span>
+									<span class="glyphicon glyphicon-star-empty" aria-hidden="true"></span>
+								</span>
+							</a>
+						</li>
+						<li>
+							<a href="oficina.htm">
+								<h4 class="title-oficina">Gerardo Bastos</h4>
+								<span class="tipo-servico">Mecânica geral</span>
+								<span class="distancia">1.1km</span>
+								<span class="qtd-avaliacoes">2.167 Avaliações</span>
+								<span class="nota-foicina">
+									<span class="glyphicon glyphicon-star" aria-hidden="true"></span>
+									<span class="glyphicon glyphicon-star" aria-hidden="true"></span>
+									<span class="glyphicon glyphicon-star" aria-hidden="true"></span>
+									<span class="glyphicon glyphicon-star" aria-hidden="true"></span>
+									<span class="glyphicon glyphicon-star-empty" aria-hidden="true"></span>
+								</span>
+							</a>
+						</li>
+						<li>
+							<a href="oficina.htm">
+								<h4 class="title-oficina">João Faz Tudo</h4>
+								<span class="tipo-servico">Funilaria</span>
+								<span class="distancia">412m</span>
+								<span class="qtd-avaliacoes">2.167 Avaliações</span>
+								<span class="nota-foicina">
+									<span class="glyphicon glyphicon-star" aria-hidden="true"></span>
+									<span class="glyphicon glyphicon-star" aria-hidden="true"></span>
+									<span class="glyphicon glyphicon-star" aria-hidden="true"></span>
+									<span class="glyphicon glyphicon-star-empty" aria-hidden="true"></span>
+									<span class="glyphicon glyphicon-star-empty" aria-hidden="true"></span>
+								</span>
+							</a>
+						</li>
+						<li>
+							<a href="oficina.htm">
+								<h4 class="title-oficina">Power Car</h4>
+								<span class="tipo-servico">Mecânica geral</span>
+								<span class="distancia">412m</span>
+								<span class="qtd-avaliacoes">2.167 Avaliações</span>
+								<span class="nota-foicina">
+									<span class="glyphicon glyphicon-star" aria-hidden="true"></span>
+									<span class="glyphicon glyphicon-star" aria-hidden="true"></span>
+									<span class="glyphicon glyphicon-star" aria-hidden="true"></span>
+									<span class="glyphicon glyphicon-star-empty" aria-hidden="true"></span>
+									<span class="glyphicon glyphicon-star-empty" aria-hidden="true"></span>
+								</span>
+							</a>
+						</li>
+						<li>
+							<a href="oficina.htm">
+								<h4 class="title-oficina">O Baratão Car</h4>
+								<span class="tipo-servico">Mecânica Geral</span>
+								<span class="distancia">412m</span>
+								<span class="qtd-avaliacoes">2.167 Avaliações</span>
+								<span class="nota-foicina">
+									<span class="glyphicon glyphicon-star" aria-hidden="true"></span>
+									<span class="glyphicon glyphicon-star" aria-hidden="true"></span>
+									<span class="glyphicon glyphicon-star" aria-hidden="true"></span>
+									<span class="glyphicon glyphicon-star-empty" aria-hidden="true"></span>
+									<span class="glyphicon glyphicon-star-empty" aria-hidden="true"></span>
+								</span>
+							</a>
+						</li>
+						<li>
+							<a href="oficina.htm">
+								<h4 class="title-oficina">Só Estofados</h4>
+								<span class="tipo-servico">Estofados</span>
+								<span class="distancia">412m</span>
+								<span class="qtd-avaliacoes">2.167 Avaliações</span>
+								<span class="nota-foicina">
+									<span class="glyphicon glyphicon-star" aria-hidden="true"></span>
+									<span class="glyphicon glyphicon-star" aria-hidden="true"></span>
+									<span class="glyphicon glyphicon-star" aria-hidden="true"></span>
+									<span class="glyphicon glyphicon-star-empty" aria-hidden="true"></span>
+									<span class="glyphicon glyphicon-star-empty" aria-hidden="true"></span>
+								</span>
+							</a>
+						</li>
+						<li>
+							<a href="oficina.htm">
+								<h4 class="title-oficina">Carro Bom</h4>
+								<span class="tipo-servico">Mecânica geral</span>
+								<span class="distancia">412m</span>
+								<span class="qtd-avaliacoes">2.167 Avaliações</span>
+								<span class="nota-foicina">
+									<span class="glyphicon glyphicon-star" aria-hidden="true"></span>
+									<span class="glyphicon glyphicon-star" aria-hidden="true"></span>
+									<span class="glyphicon glyphicon-star" aria-hidden="true"></span>
+									<span class="glyphicon glyphicon-star-empty" aria-hidden="true"></span>
+									<span class="glyphicon glyphicon-star-empty" aria-hidden="true"></span>
+								</span>
+							</a>
+						</li>
+					</ul>
+					<div class="bt-add-oficina">
+						<form action="add-oficina.htm" method="get">
+							<button type="submit" class="btn btn-default">Add Oficina</button>
+						</form>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</body>
+
+</html>

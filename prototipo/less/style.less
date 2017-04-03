@@ -1,0 +1,304 @@
+@media (max-width: 768px) { 
+	/*Tela de login*/
+	.title-login {
+		text-align: center;
+		margin-top: 15%;
+	}
+	.login {
+		background: #dedede;
+		padding: 32px 16px;
+		margin-top: 5%;
+	}
+	.login-redes {
+		padding: 32px 16px;
+		text-align: center;
+	}
+
+	/*Tela inicial*/
+	.buscar {
+		padding: 32px 16px;
+		margin-top: 10%;	
+		button {
+			width: 100%;
+			font-size: 18px;
+			font-weight: bold;
+			margin-top: 10px;
+		}
+		.alert {
+			margin-top: 10%;
+		}
+		.gps-ligado {
+			margin-top: 16px;
+			span {
+				font-size: 18px;
+			}
+		}
+	}
+
+	/*Tela de resultado da busca*/
+	.lista {
+		ul {
+			list-style: none;
+			padding: 52px 0 0 0;
+			li {
+				position: relative;
+				padding: 10px;
+				border-bottom: 1px solid #dedede;
+				.title-oficina {
+					margin: 5px 0 0 0;
+					font-size: 16px;
+					font-weight: bold;
+				}
+				span {
+					display: block;
+					&.tipo-servico {
+						font-size: 13px;
+					}
+					&.distancia {
+						font-size: 11px;
+					}
+					&.qtd-avaliacoes {
+						position: absolute;
+						top: 10px;
+						right: 12px;
+						font-size: 10px;
+					}
+					&.nota-foicina {
+						width: 80px;
+						position: absolute;
+						bottom: 12px;
+						right: 0;
+						display: flex;
+						.glyphicon-star {
+							color: orange;
+						}
+						.glyphicon-star-empty {
+							color: grey;
+						}
+
+					}
+				}
+			}
+		}
+		.bt-add-oficina {
+			text-align: center;
+			padding: 10px 0 22px 0;
+		}
+	}
+	
+	/* Tela de adicionar nova oficina */
+	.add-oficina {
+		.map-oficinas {
+			width:100%;
+			height:250px;
+			margin-top: 51px;
+		}
+		.usar-localizacao-atual {
+			padding-bottom: 16px;
+			border-bottom: 1px solid #dedede;
+			margin-bottom: 22px;
+			a {
+				display: block;
+				color: #000;
+				img {
+					width: 50px;
+					float: left; 
+					margin:5px 5px 5px 10px ;
+				}
+				h4 {
+					padding: 12px 0 0 70px;
+					margin-bottom: 3px;
+				}
+				span {
+					padding-left: 6px;
+				}
+			}
+		}
+		button {
+			margin-bottom: 16px;
+		}
+
+		&.add-oficina-sucesso {
+			.titulo-foicina-add-sucesso {
+				h3 {
+					margin-top: 0;
+					padding: 0 0 22px 12px;
+					border-bottom: 1px solid #dedede; 
+				}
+			}
+		}
+	}
+
+	/* Tela oficina */
+	.oficina-inicial {
+		.map-oficinas {
+			width:100%;
+			height:250px;
+			margin-top: 51px;
+		}
+		.titulo-oficina {
+			h3 {
+				padding: 0 12px 8px 12px;
+				span {
+					margin-top: 8px;
+					font-size: 0.7em;
+					float: right;
+				}
+			}
+		}
+		.nav-tabs {
+			padding: 0 0 0 10px;
+			li {
+				background: #dedede;
+				border:0;
+				margin-left: 1px;
+				margin-right: 1px;
+				&.active {
+					background: white;
+					border:1px solid #ccc;
+					border-bottom: 0;
+					a {
+						border:0;
+						border-bottom: 1px solid #fff;
+						&:hover {
+							background:white;
+							border:0;
+							border-bottom: 1px solid #fff;
+						}
+					}
+					span {
+					}
+				}
+				a {
+					border-bottom: 1px solid transparent;
+					margin-right: 0;
+					&:hover {
+						border:1px solid #dedede;
+						background:#dedede;
+					}
+				}
+			}
+		}
+		
+		.aba-avaliacao-geral,
+		.aba-comentarios {
+			padding-bottom: 30px;
+			h4 {
+				margin: 0;
+				padding: 16px 4px 16px 16px;
+				span {
+					float: right;
+					font-size: 12px;
+					padding:4px; 
+				}
+			}
+			
+			.nota-geral,
+			.lista-itens-avaliados {
+				list-style: none;
+				position: relative;
+				padding: 0 10px;
+				margin: 0;
+				text-align: right;
+				li {
+					margin: 6px 0;
+				}
+				.label {
+					float: left;
+					color: #000;
+					font-size: 14px;
+					position: absolute;
+					left: 6px;
+					font-weight: normal;
+				}
+				.numero-nota {
+					font-weight: bold;
+					margin-left: 6px;	
+					&.nota-laranja  {color: #ef7d03;}
+					&.nota-verde    {color: #449a10;}
+					&.nota-vermelho {color: #9a1010;}
+				}
+				.glyphicon-star {
+						color: orange;
+					}
+					.glyphicon-star-empty {
+						color: grey;
+					}
+			}
+			.nota-geral {
+				background: #dedede;
+				padding: 10px;
+				margin-bottom: 20px;
+			}
+		}
+		.aba-comentarios {
+			
+			.comentario-usuario {
+				background: #dedede;
+				padding: 16px;
+				margin-bottom: 1px ;
+				.nome-usuario {
+					font-size: 16px;
+					text-align: left;
+					font-weight: bold;
+					.data-comentario {
+						float: right;
+						font-size: 12px;
+					}
+				}
+				.titulo-comentaio {
+					display: block;
+				}
+				.pros {
+					color: green;
+					font-weight: bold;
+				}
+				.contra {
+					color: red;
+					font-weight: bold;
+				}
+			}
+
+			.nota-geral {
+				margin-bottom: 1px;
+			}
+			.lista-itens-avaliados {
+				background: #dedede;
+				padding: 10px;
+			}
+			.curtir-comentario {
+				text-align: right;
+				padding: 8px;
+				margin-bottom: 30px;
+				border-top: 1px solid #fff;
+				background: #dedede;
+				span {
+					&.label {
+						color: black;
+						font-size: 12px;
+					}
+					&.numero-curtidas {color: green;}
+					&.glyphicon-thumbs-down {margin-left: 10px;}
+					&.numero-descurtidas {color: red;}
+				}
+			}
+		}
+
+		.aba-avaliar {
+			padding-bottom: 30px;
+			h4 {
+				margin: 0;
+				padding: 16px 4px 16px 16px;
+			}
+			.container {
+				padding-top: 5%;
+				.botoes-valiar-servico {
+					text-align: center;
+					button {
+						width: 100%;
+					}
+				}
+			}
+		}
+	}
+}
