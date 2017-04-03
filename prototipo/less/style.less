@@ -37,9 +37,14 @@
 
 	/*Tela de resultado da busca*/
 	.lista {
+		.map-oficinas {
+			width:100%;
+			height:250px;
+			margin-top: 51px;
+		}
 		ul {
 			list-style: none;
-			padding: 52px 0 0 0;
+			padding: 0;
 			li {
 				position: relative;
 				padding: 10px;
@@ -73,7 +78,7 @@
 							color: orange;
 						}
 						.glyphicon-star-empty {
-							color: grey;
+							color: #c3c3c3;
 						}
 
 					}
@@ -138,12 +143,20 @@
 		}
 		.titulo-oficina {
 			h3 {
-				padding: 0 12px 8px 12px;
+				padding: 0 12px 0 12px;
 				span {
 					margin-top: 8px;
 					font-size: 0.7em;
 					float: right;
 				}
+			}
+		}
+		.avaliar-oficina {
+			padding-left: 10px;
+			padding-right: 10px;
+			padding-bottom: 20px;
+			.botao-avaliar-ofocina {
+
 			}
 		}
 		.nav-tabs {
@@ -222,7 +235,7 @@
 						color: orange;
 					}
 					.glyphicon-star-empty {
-						color: grey;
+						color: #c3c3c3;
 					}
 			}
 			.nota-geral {
@@ -234,11 +247,11 @@
 		.aba-comentarios {
 			
 			.comentario-usuario {
-				background: #dedede;
+				background: #ececec;
 				padding: 16px;
 				margin-bottom: 1px ;
 				.nome-usuario {
-					font-size: 16px;
+					font-size: 22px;
 					text-align: left;
 					font-weight: bold;
 					.data-comentario {
@@ -263,7 +276,7 @@
 				margin-bottom: 1px;
 			}
 			.lista-itens-avaliados {
-				background: #dedede;
+				background: #ececec;
 				padding: 10px;
 			}
 			.curtir-comentario {
@@ -271,7 +284,7 @@
 				padding: 8px;
 				margin-bottom: 30px;
 				border-top: 1px solid #fff;
-				background: #dedede;
+				background: #ececec;
 				span {
 					&.label {
 						color: black;
@@ -284,7 +297,7 @@
 			}
 		}
 
-		.aba-avaliar {
+		.aba-agendar-servico {
 			padding-bottom: 30px;
 			h4 {
 				margin: 0;
